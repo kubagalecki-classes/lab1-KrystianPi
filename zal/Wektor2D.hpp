@@ -24,13 +24,6 @@ class Wektor2D{
     friend Wektor2D operator+(Wektor2D& w1 , Wektor2D& w2) { 
         return Wektor2D(w1.getX() + w2.getX(), w1.getY() + w2.getY()); 
         }
-    ~Wektor2D(){
-        print();
-        cout << "tu destruktor" << endl;
-    }
-    void print(){
-        cout << "x = " << x << " y = " << y << endl;
-    }
     friend double operator*( Wektor2D& w1,  Wektor2D& w2) { 
         double prod = w1.x * w2.x + w1.y * w2.y;
         return prod;
